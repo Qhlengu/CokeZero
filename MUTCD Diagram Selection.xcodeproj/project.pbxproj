@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745623D81DB31C8700C885B9 /* table52ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745623D71DB31C8700C885B9 /* table52ViewController.swift */; };
+		7495DBAA1DB135C500D0FAB8 /* Pages from MUTCDPart3WorksonRoads.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7495DBA91DB135C500D0FAB8 /* Pages from MUTCDPart3WorksonRoads.pdf */; };
 		74C197951DAF947200107831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C197941DAF947200107831 /* AppDelegate.swift */; };
 		74C197971DAF947200107831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C197961DAF947200107831 /* ViewController.swift */; };
 		74C1979A1DAF947200107831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C197981DAF947200107831 /* Main.storyboard */; };
 		74C1979C1DAF947200107831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C1979B1DAF947200107831 /* Assets.xcassets */; };
 		74C1979F1DAF947200107831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C1979D1DAF947200107831 /* LaunchScreen.storyboard */; };
+		74C197A71DAFA49900107831 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C197A61DAFA49900107831 /* Model.swift */; };
+		74C197A91DAFB37000107831 /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C197A81DAFB37000107831 /* DiagramViewController.swift */; };
+		74C197AB1DAFC6EB00107831 /* LaneTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C197AA1DAFC6EB00107831 /* LaneTypeViewController.swift */; };
+		74C197AD1DB0B99400107831 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C197AC1DB0B99400107831 /* WebViewController.swift */; };
+		74C197B01DB11AB700107831 /* RoadEnvironment Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C197AF1DB11AB700107831 /* RoadEnvironment Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		745623D71DB31C8700C885B9 /* table52ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = table52ViewController.swift; path = ../table52ViewController.swift; sourceTree = "<group>"; };
+		7495DBA91DB135C500D0FAB8 /* Pages from MUTCDPart3WorksonRoads.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Pages from MUTCDPart3WorksonRoads.pdf"; sourceTree = "<group>"; };
 		74C197911DAF947200107831 /* MUTCD Diagram Selection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MUTCD Diagram Selection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C197941DAF947200107831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74C197961DAF947200107831 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		74C1979B1DAF947200107831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74C1979E1DAF947200107831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74C197A01DAF947200107831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74C197A61DAFA49900107831 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		74C197A81DAFB37000107831 /* DiagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagramViewController.swift; sourceTree = "<group>"; };
+		74C197AA1DAFC6EB00107831 /* LaneTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaneTypeViewController.swift; sourceTree = "<group>"; };
+		74C197AC1DB0B99400107831 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		74C197AF1DB11AB700107831 /* RoadEnvironment Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoadEnvironment Model.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		74C197931DAF947200107831 /* MUTCD Diagram Selection */ = {
 			isa = PBXGroup;
 			children = (
+				74C197AE1DB0B99F00107831 /* ViewControllers */,
 				74C197941DAF947200107831 /* AppDelegate.swift */,
-				74C197961DAF947200107831 /* ViewController.swift */,
+				74C197A61DAFA49900107831 /* Model.swift */,
 				74C197981DAF947200107831 /* Main.storyboard */,
+				74C197AF1DB11AB700107831 /* RoadEnvironment Model.swift */,
 				74C1979B1DAF947200107831 /* Assets.xcassets */,
 				74C1979D1DAF947200107831 /* LaunchScreen.storyboard */,
 				74C197A01DAF947200107831 /* Info.plist */,
+				7495DBA91DB135C500D0FAB8 /* Pages from MUTCDPart3WorksonRoads.pdf */,
 			);
 			path = "MUTCD Diagram Selection";
+			sourceTree = "<group>";
+		};
+		74C197AE1DB0B99F00107831 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C197961DAF947200107831 /* ViewController.swift */,
+				74C197A81DAFB37000107831 /* DiagramViewController.swift */,
+				74C197AA1DAFC6EB00107831 /* LaneTypeViewController.swift */,
+				745623D71DB31C8700C885B9 /* table52ViewController.swift */,
+				74C197AC1DB0B99400107831 /* WebViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7495DBAA1DB135C500D0FAB8 /* Pages from MUTCDPart3WorksonRoads.pdf in Resources */,
 				74C1979F1DAF947200107831 /* LaunchScreen.storyboard in Resources */,
 				74C1979C1DAF947200107831 /* Assets.xcassets in Resources */,
 				74C1979A1DAF947200107831 /* Main.storyboard in Resources */,
@@ -137,7 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C197A71DAFA49900107831 /* Model.swift in Sources */,
+				74C197AD1DB0B99400107831 /* WebViewController.swift in Sources */,
+				74C197B01DB11AB700107831 /* RoadEnvironment Model.swift in Sources */,
 				74C197971DAF947200107831 /* ViewController.swift in Sources */,
+				745623D81DB31C8700C885B9 /* table52ViewController.swift in Sources */,
+				74C197A91DAFB37000107831 /* DiagramViewController.swift in Sources */,
+				74C197AB1DAFC6EB00107831 /* LaneTypeViewController.swift in Sources */,
 				74C197951DAF947200107831 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +336,7 @@
 				74C197A51DAF947200107831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
