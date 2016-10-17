@@ -100,13 +100,53 @@ enum DiagramNumber: String {
     case table54 =                                                      "table 5.4"
     case table55 =                                                      "table 5.5"
     case bridgework =                                                   "Select the appropriate description and Diagram from this table and also refer to Clause 5.2"
+    case diagram3and10 =                                                "3 and 10"
+    case diagram3and11 =                                                "3 and 11"
     case potentialError =                                               "There is no diagram available"
     
-//    var imageArray: [String] {
-//        switch self {
-//        case.diagram36: return [DiagramNumber.diagram36.rawValue]
-//        }
-//    }
+    var imageArray: [String] {
+        switch self {
+        case .diagram1: return ["1A", "N1A", "1B", "N1B"]
+        case .diagram2: return [DiagramNumber.diagram2.rawValue, "N\(DiagramNumber.diagram2.rawValue)"]
+        case .diagram3: return [DiagramNumber.diagram3.rawValue, "N\(DiagramNumber.diagram3.rawValue)"]
+        case .diagram4: return [DiagramNumber.diagram4.rawValue, "N\(DiagramNumber.diagram4.rawValue)"]
+        case .diagram5: return [DiagramNumber.diagram5.rawValue, "N\(DiagramNumber.diagram5.rawValue)"]
+        case .diagram6: return [DiagramNumber.diagram6.rawValue, "N\(DiagramNumber.diagram6.rawValue)"]
+        case .diagram7: return ["7A", "N7A", "7B", "N7B", "7C", "N7C", "7D", "N7D"]
+        case .diagram8: return [DiagramNumber.diagram8.rawValue, "N\(DiagramNumber.diagram8.rawValue)"]
+        case .diagram9: return [DiagramNumber.diagram9.rawValue, "N\(DiagramNumber.diagram9.rawValue)"]
+        case .diagram10: return [DiagramNumber.diagram10.rawValue, "N\(DiagramNumber.diagram10.rawValue)"]
+        case .diagram11: return [DiagramNumber.diagram11.rawValue, "N\(DiagramNumber.diagram11.rawValue)"]
+        case .diagram12: return [DiagramNumber.diagram12.rawValue, "N\(DiagramNumber.diagram12.rawValue)"]
+        case .diagram13: return [DiagramNumber.diagram13.rawValue, "N\(DiagramNumber.diagram13.rawValue)"]
+        case .diagram14: return [DiagramNumber.diagram14.rawValue, "N\(DiagramNumber.diagram14.rawValue)"]
+        case .diagram15: return [DiagramNumber.diagram15.rawValue, "N\(DiagramNumber.diagram15.rawValue)"]
+        case .diagram16: return [DiagramNumber.diagram16.rawValue, "N\(DiagramNumber.diagram16.rawValue)"]
+        case .diagram17: return [DiagramNumber.diagram17.rawValue, "N\(DiagramNumber.diagram17.rawValue)"]
+        case .diagram18: return [DiagramNumber.diagram18.rawValue, "N\(DiagramNumber.diagram18.rawValue)"]
+        case .diagram19: return [DiagramNumber.diagram19.rawValue, "N\(DiagramNumber.diagram19.rawValue)"]
+        case .diagram20: return [DiagramNumber.diagram20.rawValue, "N\(DiagramNumber.diagram20.rawValue)"]
+        case .diagram21: return [DiagramNumber.diagram21.rawValue, "N\(DiagramNumber.diagram21.rawValue)"]
+        case .diagram22: return [DiagramNumber.diagram22.rawValue, "N\(DiagramNumber.diagram22.rawValue)"]
+        case .diagram23: return [DiagramNumber.diagram23.rawValue, "N\(DiagramNumber.diagram23.rawValue)"]
+        case .diagram24: return [DiagramNumber.diagram24.rawValue, "N\(DiagramNumber.diagram24.rawValue)"]
+        case .diagram25: return [DiagramNumber.diagram25.rawValue, "N\(DiagramNumber.diagram25.rawValue)"]
+        case .diagram26: return [DiagramNumber.diagram26.rawValue, "N\(DiagramNumber.diagram26.rawValue)"]
+        case .diagram27: return [DiagramNumber.diagram27.rawValue, "N\(DiagramNumber.diagram27.rawValue)"]
+        case .diagram28: return [DiagramNumber.diagram28.rawValue, "N\(DiagramNumber.diagram28.rawValue)"]
+        case .diagram29: return [DiagramNumber.diagram29.rawValue, "N\(DiagramNumber.diagram29.rawValue)"]
+        case .diagram30: return [DiagramNumber.diagram30.rawValue, "N\(DiagramNumber.diagram30.rawValue)"]
+        case .diagram31: return [DiagramNumber.diagram31.rawValue, "N\(DiagramNumber.diagram31.rawValue)"]
+        case .diagram32: return [DiagramNumber.diagram32.rawValue, "N\(DiagramNumber.diagram32.rawValue)"]
+        case .diagram33: return [DiagramNumber.diagram33.rawValue, "N\(DiagramNumber.diagram33.rawValue)"]
+        case .diagram34: return ["34", "N34", "35", "N35"]
+        case .diagram36: return [DiagramNumber.diagram36.rawValue, "N\(DiagramNumber.diagram36.rawValue)"]
+        case .diagram37: return [DiagramNumber.diagram37.rawValue, "N\(DiagramNumber.diagram37.rawValue)"]
+        case .diagram3and10: return ["3", "N3", "10", "N10"]
+        case .diagram3and11: return ["3", "N3", "11", "N11"]
+        default: return ["default"]
+        }
+    }
 }
 
 
@@ -265,6 +305,28 @@ class Page51: ConvertPickerViewRowPathToMethod, StoryBoardTransition {
             }
         }
 }
+enum table52AADT: String {
+    case LesserThan400 = "AADT: 0 - 400"
+    case Over400 = "AADT: Over 400"
+    
+    
+    var Minor: DiagramNumber {
+        switch self {
+        case .LesserThan400: return DiagramNumber.diagram1
+        case .Over400: return DiagramNumber.diagram3and11
+        }
+    }
+    
+    var None: DiagramNumber {
+        switch self {
+        case .LesserThan400: return .diagram3and11
+        case .Over400: return .diagram3and10
+        }
+    }
+}
+
+
+
 
 
 

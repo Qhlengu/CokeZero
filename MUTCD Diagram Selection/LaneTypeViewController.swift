@@ -15,30 +15,30 @@ class LaneTypeViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
     var request: DescriptionOfWork?
+    var imageView: UIImageView! = nil
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        pageControl.numberOfPages = delegate.imageArray.count
         setupImageViews()
         scrollView.isPagingEnabled = true
         scrollView.delegate = self
         scrollView.frame = view.bounds
         
         
-        
-        
-        
+    
         
     }
 
     
     func setupImageViews() {
         var totalWidth: CGFloat = 0
-        let listofImages = [delegate.rawValue, "N1A"]
-        imageNames += listofImages
+        let listOfImages = delegate.imageArray
+        imageNames += listOfImages
         for imageName in imageNames {
             let image = UIImage(named: imageName)
-            let imageView = UIImageView(image: image)
+            imageView = UIImageView(image: image)
             imageView.frame = CGRect(origin: CGPoint(x: totalWidth, y:0), size: view.bounds.size)
             imageView.contentMode = .scaleAspectFit
             scrollView.addSubview(imageView)
@@ -55,5 +55,8 @@ extension LaneTypeViewController: UIScrollViewDelegate {
         let pageWidth = Int(scrollView.contentSize.width)/imageNames.count
         pageControl.currentPage = Int(scrollView.contentOffset.x) / pageWidth
     }
-
+    
 }
+        
+
+    
